@@ -14,8 +14,8 @@ const errorHandler = (error, msg, rejectFunction) => {
   console.error(error)
   rejectFunction({ error: msg })
 }
-const categoryModule = require('./categories')({ connection, errorHandler })
+const categoryModule = require('./polu_ws')({ connection, errorHandler })
 
 module.exports = {
-  categories: () => categoryModule
+  polu_ws: () => categoryModule
 }
