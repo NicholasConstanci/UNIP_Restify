@@ -3,7 +3,7 @@ const db = require('../services/mysql')
 
 const routes = (server) => {
   server.get('/', (req, res, next) => {
-    res.send('Always, master~')
+    res.send('This is not the right place')
     next()
   })
 
